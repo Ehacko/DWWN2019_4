@@ -18,7 +18,7 @@
 
     function ButtonField($attr, $name){
 	echo "<button";
-        foreach ($attr as $value) { echo " {$value[0]='{$value[1]}'"};
+        foreach ($attr as $value) { echo "{$value[0]}='{$value[1]}' " };
 	echo ">{$name}</button>";
     }
 ?>

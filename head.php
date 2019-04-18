@@ -32,19 +32,18 @@
             switch($a) {
                 case 1:
                     $_POST['page'] = 'article.html';
-                    //$page='article.html';
-                    // echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
+                    echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
                 case 2:
-                    $page='Commandes.html';
+                    $_POST['page'] = 'Commandes.html';
                     echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
                 case 3:
-                    $page='Client.html';
+                    $_POST['page'] = 'Client.html';
                     echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
                 case 4:
-                    $page='accueil.html';
+                    $_POST['page'] = 'accueil.html';
                     echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
             }

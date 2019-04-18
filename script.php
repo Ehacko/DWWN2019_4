@@ -17,6 +17,6 @@
     }
 
     function ButtonField($attr){
-        foreach ($attr as $value) {  }
+        foreach ($attr as $value) { echo "<button {$} }
     }
 ?>

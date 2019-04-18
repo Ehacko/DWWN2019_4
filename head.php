@@ -31,8 +31,9 @@
         function gola($a) {
             switch($a) {
                 case 1:
-                    $page='article.html';
-                    echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
+                    $_POST['page'] = 'article.html';
+                    //$page='article.html';
+                    // echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
                 case 2:
                     $page='Commandes.html';

@@ -1,1 +1,1 @@
-<p>bite</p>
+<p>Accueil</p>

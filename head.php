@@ -46,7 +46,6 @@
                     $_POST['page'] = 'accueil.php';
                     echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
                     break;
-            }
-        } 
+        } } 
     ?>
 </header>

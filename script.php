@@ -1,7 +1,7 @@
 <?php
     
     if (isset($_POST['page'])) { $page = $_POST['page']; }
-    else { $page = 'accueil.html' ; }
+    else { $page = 'accueil.php' ; }
     
     function SelectField($name, $option) {
         echo "<select name='{$name}'>";
@@ -17,6 +17,6 @@
     }
 
     function ButtonField($attr){
-        foreach ($attr as $value) { echo "<button {$} }
+        foreach ($attr as $value) { echo "<button {$value[0]='{$value[1]}'} }
     }
 ?>

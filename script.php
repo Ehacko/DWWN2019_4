@@ -1,4 +1,8 @@
 <?php
+    
+    if (isset($_POST['page'])) { $page = $_POST['page']; }
+    else { $page = 'accueil.html' ; }
+    
     function SelectField($name, $option) {
         echo "<select name='{$name}'>";
         foreach ($option as $value) { echo "<option value='{$value}'>{$value}</option>" };

@@ -2,15 +2,16 @@
 
     $password = 'admin';
 
-    if (isset($_POST['log'])) {$_SESSION['login'][0] = 0;}
+    if (isset($_POST['log'])) { $_SESSION['login'][0] = 0; $_POST['log'] = null;}
+
+    if (isset($_POST['try'])) {
+        if ($_POST['pass'] == $password) {$_SESSION['login'][0] = 1; $_SESSION['login'][1] = $_POST['user'];}
+        else { include 'pages/accueil_wrong.php'; }
+    }
 
     if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; }
     else { $page = 'pages/accueil.php' ; }
 
-    if (isset($_POST['try'])) {
-        if ($_POST['pass'] == $password;) {$_SESSION['login'][0] = 1; $_SESSION['login'][1] = $_POST['name'];}
-        else {alert('Wrong!\n');}
-    }
     
     function SelectField($name, $option) {
         echo "<select name='{$name}'>";

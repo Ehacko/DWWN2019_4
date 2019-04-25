@@ -1,7 +1,7 @@
 <?php 
     session_start();
 
-    $_SESSION['login'] = [1, "gabriel"];
+    $_SESSION['login'] = [0, ""];
 
     include 'head.php';
 

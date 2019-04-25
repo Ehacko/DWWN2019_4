@@ -1,33 +1,11 @@
-<?php include 'head.php'; ?>
+<?php 
+    session_start();
 
-<?php include 'script.php'; ?>
+    $_SESSION['login'] = [1, "gabriel"];
 
-<?php include $page; ?>
+    include 'head.php';
 
-
-    
-    <?php
-        function gola($a) {
-            switch($a) {
-                case 1:
-                    echo 'ecth';
-                    include 'article.php';
-                    //$_POST['page'] = 'article.php';
-                    //echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
-                    break;
-                case 2:
-                    $_POST['page'] = 'Commandes.php';
-                    echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
-                    break;
-                case 3:
-                    $_POST['page'] = 'Client.php';
-                    echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
-                    break;
-                case 4:
-                    $_POST['page'] = 'accueil.php';
-                    echo ('<script type="text/javascript"> document.getElementById("footer").style.backgroundColor = "red"; </script>');
-                    break;
-        } }
-    ?>
-
-<?php include 'footer.php'; ?>
+    include 'script/script.php';
+    include $page;
+    include 'footer.php';
+?>

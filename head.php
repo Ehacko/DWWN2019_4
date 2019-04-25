@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -25,7 +25,15 @@
           <li class="nav-item">
             <span class="nav-link" onclick="gola('client.php')">Client</span>
           </li>
+          <li class="nav-item">
+            <span class="nav-link" onclick="document.getElementById('logout').submit();">Déconnection</span>
+          </li>
         </ul>
         </div>
     </nav> 
 </header>
+
+
+<form action="" id="logout" method="post">
+   <input type="number" name="log" value="1" style="display: none">
+</form>

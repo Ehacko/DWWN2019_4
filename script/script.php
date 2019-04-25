@@ -2,8 +2,6 @@
 
     $password = 'admin';
 
-    if (isset($_POST['log'])) { $_SESSION['login'][0] = 0; $_POST['log'] = null;}
-
     if (isset($_POST['try'])) {
         if ($_POST['pass'] == $password) {$_SESSION['login'][0] = 1; $_SESSION['login'][1] = $_POST['user'];}
         else { include 'pages/accueil_wrong.php'; }

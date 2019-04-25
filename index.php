@@ -2,6 +2,8 @@
 
 <?php include 'script.php'; ?>
 
+<?php include $page; ?>
+
 
     
     <?php

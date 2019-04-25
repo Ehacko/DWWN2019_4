@@ -7,7 +7,6 @@
 }
 
 .contain {
-    
     padding: 10px;
     background-color: #fff; 
     box-shadow: 1px 2px 12px 1px #745fb51f;
@@ -17,4 +16,8 @@
     display: inline-block;
     cursor: pointer;
     color: black;
+}
+
+.main {
+    text-align: center;
 }

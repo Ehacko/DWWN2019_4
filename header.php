@@ -1,4 +1,4 @@
-﻿<header>
+<header>
 
     <form method="post" id="LinkForm"><input id="LinkInput" type="hidden" name="page"></form>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

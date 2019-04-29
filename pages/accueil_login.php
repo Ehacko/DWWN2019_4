@@ -1,4 +1,4 @@
-﻿<div class="main">
+<div class="main">
    <div class="contain">
         <form action="" class="log" method="post">
 
@@ -9,7 +9,7 @@
 
             <div class="form-group">
             	<label for="pass">Login :</label><br>
-            	<input name="pass" type="text" class="form-control" required><br>
+            	<input name="pass" type="password" class="form-control" required><br>
 	    </div>
 
 	    <input name="try" value="1" style="display: none">

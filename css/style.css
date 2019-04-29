@@ -1,6 +1,7 @@
+:root{ --ftcl: none; }
 footer {
     padding: 5px;
-    background-color: #f8f9fa!important;
+    background-color: var(--ftcl)!important;
     position: fixed;
     left: 0;
     bottom: 0;

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html style="--ftcl: <?php $color ?>">
 <html lang="en">
 <head>
     <meta charset="UTF-8">

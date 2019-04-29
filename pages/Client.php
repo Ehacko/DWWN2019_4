@@ -1,1 +1,1 @@
-<p>Client</p>
+<p>Clients de <?php echo $_SESSION['login'][1]; ?></p>

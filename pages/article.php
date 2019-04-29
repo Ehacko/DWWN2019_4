@@ -1,1 +1,1 @@
-<p>Article</p>
+<p>Articles de <?php echo $_SESSION['login'][1]; ?></p>

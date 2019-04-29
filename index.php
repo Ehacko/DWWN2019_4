@@ -5,8 +5,7 @@
 
     include 'head.php';
 
-    include 'head.php';
-    include 'header.php' ;
-    include $page;
-    include 'footer.php';
+    include ('header.php');
+    include ($page);
+    include ('footer.php');
 ?>

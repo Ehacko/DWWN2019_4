@@ -14,7 +14,14 @@
         if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; }}
         else { $page = 'pages/accueil_login.php';}
     }
-    else { $page = 'pages/accueil_login.php';}
+    else { $page = 'pages/accueil_login.php';
+    }
+    switch($page) {
+        case 'pages/article.php': $color = "red"; break;
+        case 'pages/commandes.php': $color = "blue"; break;
+        case 'pages/client.php': $color = "green"; break;
+        default: $color = "grey"; break;
+    }
 
     
 

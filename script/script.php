@@ -13,11 +13,11 @@
 
         if ($_SESSION['login'][0] == 1) {
 
-            if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; } else { $page = 'pages/accueil_login.php'; }
+            if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; } else { $page = 'pages/accueil.php'; }
 
-        } else { $page = 'pages/accueil_login.php'; }
+        } else { $page = 'pages/accueil.php'; }
 
-    } else { $page = 'pages/accueil_login.php'; }
+    } else { $page = 'pages/accueil.php'; }
 
     switch($page) {
         case 'pages/article.php': $color1 = "red"; $color2 = "lightblue"; break;

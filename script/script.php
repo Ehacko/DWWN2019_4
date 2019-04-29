@@ -20,9 +20,9 @@
     } else { $page = 'pages/accueil.php'; }
 
     switch($page) {
-        case 'pages/article.php': $color1 = "red"; $color2 = "lightblue"; break;
-        case 'pages/commandes.php': $color1 = "blue"; $color2 = "lightgreen"; break;
-        case 'pages/client.php': $color1 = "green"; $color2 = "lightred"; break;
+        case 'pages/article.php': $color1 = "darkred"; $color2 = "lightblue"; break;
+        case 'pages/commandes.php': $color1 = "darkblue"; $color2 = "lightgreen"; break;
+        case 'pages/client.php': $color1 = "darkgreen"; $color2 = "pink"; break;
         default: $color1 = "black"; $color2 = "white"; break;
     }
 

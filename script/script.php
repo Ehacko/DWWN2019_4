@@ -6,21 +6,22 @@
 
     if (isset($_POST['try'])) {
         if ($_POST['pass'] == $password) {$_SESSION['login'][0] = 1; $_SESSION['login'][1] = $_POST['user']; $page = 'pages/accueil.php'; }
-        else { $page = 'pages/accueil_wrong.php'; }
+        else { include 'pages/accueil_wrong.php'; }
     }
 
     if (isset($_SESSION['login'])) { 
         if ($_SESSION['login'][0] == 1){
-        if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; }}
-        else { $page = 'pages/accueil_login.php';}
+            if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; }
+        }
+        else { $page = 'pages/accueil_login.php'; }
     }
     else { $page = 'pages/accueil_login.php';
     }
     switch($page) {
-        case 'pages/article.php': $color = "red"; break;
-        case 'pages/commandes.php': $color = "blue"; break;
-        case 'pages/client.php': $color = "green"; break;
-        default: $color = "grey"; break;
+        case 'pages/article.php': $color1 = "red"; $color2 = "blue"; break;
+        case 'pages/commandes.php': $color1 = "blue"; $color2 = "green"; break;
+        case 'pages/client.php': $color1 = "green"; $color2 = "red"; break;
+        default: $color1 = "black"; $color2 = "white"; break;
     }
 
     

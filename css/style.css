@@ -1,7 +1,8 @@
-:root{ --ftcl: none; }
+:root{ --ftbg: none; --ftft: none; }
 footer {
     padding: 5px;
-    background-color: var(--ftcl)!important;
+    background-color: var(--ftbg)!important;
+    color: var(--ftft);
     position: fixed;
     left: 0;
     bottom: 0;

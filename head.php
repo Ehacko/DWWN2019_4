@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" style="--ftcl: <?php echo $color; ?>;">
+﻿<!DOCTYPE html>
+<html lang="en" style="--ftbg: <?php echo $color1; ?>; --ftft: <?php echo $color2; ?>;">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>

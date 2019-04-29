@@ -9,18 +9,20 @@
         else { include 'pages/accueil_wrong.php'; }
     }
 
-    if (isset($_SESSION['login'])) { 
-        if ($_SESSION['login'][0] == 1){
-            if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; }
-        }
-        else { $page = 'pages/accueil_login.php'; }
-    }
-    else { $page = 'pages/accueil_login.php';
-    }
+    if (isset($_SESSION['login'])) {
+
+        if ($_SESSION['login'][0] == 1) {
+
+            if (isset($_POST['page'])) { $page = 'pages/'.$_POST['page']; } else { $page = 'pages/accueil_login.php'; }
+
+        } else { $page = 'pages/accueil_login.php'; }
+
+    } else { $page = 'pages/accueil_login.php'; }
+
     switch($page) {
-        case 'pages/article.php': $color1 = "red"; $color2 = "blue"; break;
-        case 'pages/commandes.php': $color1 = "blue"; $color2 = "green"; break;
-        case 'pages/client.php': $color1 = "green"; $color2 = "red"; break;
+        case 'pages/article.php': $color1 = "red"; $color2 = "lightblue"; break;
+        case 'pages/commandes.php': $color1 = "blue"; $color2 = "lightgreen"; break;
+        case 'pages/client.php': $color1 = "green"; $color2 = "lightred"; break;
         default: $color1 = "black"; $color2 = "white"; break;
     }
 

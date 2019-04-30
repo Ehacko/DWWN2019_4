@@ -2,7 +2,7 @@
 
     <form method="post" id="LinkForm"><input id="LinkInput" type="hidden" name="page"></form>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand"  onclick="gola('accueil.php')">Une société, disons... Gaz de france</span>
+        <span class="navbar-brand"  onclick="gola('accueil.php')">GwadaBat</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
